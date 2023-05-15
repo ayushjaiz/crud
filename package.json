@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "lint:ejs": "ejslint src/views/update_user.ejs"
   },
   "keywords": [
     "crd",
@@ -22,5 +23,8 @@
     "mongoose": "^6.8.4",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "ejs-lint": "^2.0.0"
   }
 }
